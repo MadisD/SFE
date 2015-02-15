@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
-  <widgets xsi:type="model:Browser" id="1" x="96" y="47" width="969" height="797" text="Browser&#xA;http://www.OMAküsitlused.ee" measuredWidth="969" measuredHeight="797"/>
+  <widgets xsi:type="model:Browser" id="1" x="96" y="47" width="969" height="797" text="Browser&#xA;http://www.OMAküsitlused.ee/minukysitlused/As72J7v5g" measuredWidth="969" measuredHeight="797"/>
   <widgets xsi:type="model:Placeholder" id="6" x="106" y="109" width="199" height="114" text="OML logo" measuredWidth="199" measuredHeight="114" link="Index.screen"/>
-  <widgets xsi:type="model:LinkBar" id="7" x="336" y="200" text="Pealeht, Uus küsitlus, ~Minu küsimustikud~" measuredWidth="250" measuredHeight="23">
+  <widgets xsi:type="model:LinkBar" id="7" x="336" y="200" text="Pealeht, Uus küsitlus,Avalikud Küsimustikud, ~Minu küsimustikud~" measuredWidth="392" measuredHeight="23">
     <font/>
     <items link="Index.screen" x="0" y="0" width="42" height="23" text="Pealeht"/>
     <items link="New_Questionnaire.screen" x="60" y="0" width="66" height="23" text="Uus küsitlus"/>
-    <items x="144" y="0" width="105" height="23" text="~Minu küsimustikud~"/>
+    <items link="Avalik.screen" x="144" y="0" width="124" height="23" text="Avalikud Küsimustikud"/>
+    <items x="286" y="0" width="105" height="23" text="~Minu küsimustikud~"/>
   </widgets>
   <widgets xsi:type="model:Label" id="8" x="944" y="184" text="Kasutaja: oml1111" measuredWidth="101" measuredHeight="23">
     <font/>
