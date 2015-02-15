@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
-  <widgets xsi:type="model:Browser" id="3" x="96" y="40" width="969" height="1700" text="Browser&#xA;http://www.OMAküsitlused.ee" measuredWidth="969" measuredHeight="1700"/>
+  <widgets xsi:type="model:Browser" id="3" x="96" y="40" width="969" height="1700" text="Browser&#xA;http://www.OMAküsitlused.ee/index.html" measuredWidth="969" measuredHeight="1700"/>
   <widgets xsi:type="model:LinkBar" id="12" x="919" y="192" text="Registreeri,Logi sisse" measuredWidth="130" measuredHeight="23">
     <font/>
-    <items x="0" y="0" width="58" height="23" text="Registreeri"/>
+    <items link="Register.screen" x="0" y="0" width="58" height="23" text="Registreeri"/>
     <items x="76" y="0" width="53" height="23" text="Logi sisse"/>
   </widgets>
   <widgets xsi:type="model:HLine" id="13" x="96" y="240" width="969" measuredWidth="969" measuredHeight="6"/>

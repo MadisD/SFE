@@ -11,7 +11,7 @@
   <widgets xsi:type="model:Label" id="8" x="944" y="184" text="Kasutaja: oml1111" measuredWidth="101" measuredHeight="23">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Link" id="9" x="944" y="206" text="Logi Välja" measuredWidth="54" measuredHeight="23">
+  <widgets xsi:type="model:Link" id="9" x="944" y="206" text="Logi Välja" measuredWidth="54" measuredHeight="23" link="Index.screen">
     <font/>
   </widgets>
   <widgets xsi:type="model:Label" id="10" x="312" y="256" width="273" text="Pealkiri" measuredWidth="273" measuredHeight="53" textAlignment="Center">
