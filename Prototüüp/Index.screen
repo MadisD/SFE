@@ -7,7 +7,7 @@
     <items x="76" y="0" width="53" height="23" text="Logi sisse"/>
   </widgets>
   <widgets xsi:type="model:HLine" id="13" x="96" y="240" width="969" measuredWidth="969" measuredHeight="6"/>
-  <widgets xsi:type="model:Placeholder" id="14" x="106" y="109" width="199" height="114" text="OML logo" measuredWidth="199" measuredHeight="114" link=""/>
+  <widgets xsi:type="model:Placeholder" id="14" x="106" y="109" width="199" height="114" text="OML logo" measuredWidth="199" measuredHeight="114"/>
   <widgets xsi:type="model:VScrollbar" id="15" x="1048" y="99" height="1641" measuredWidth="17" measuredHeight="1641"/>
   <widgets xsi:type="model:Label" id="16" x="224" y="392" text="Looge kiiresti endale sobiv küsimustik " measuredWidth="726" measuredHeight="67">
     <font size="43px"/>
@@ -16,11 +16,10 @@
     <font/>
   </widgets>
   <widgets xsi:type="model:HLine" id="18" x="96" y="840" width="969" measuredWidth="969" measuredHeight="6"/>
-  <widgets xsi:type="model:LinkBar" id="23" x="336" y="200" text="~Pealeht~, Uus küsitlus,Abi" measuredWidth="166" measuredHeight="23">
+  <widgets xsi:type="model:LinkBar" id="23" x="336" y="200" text="~Pealeht~, Avalikud Küsimustikud" measuredWidth="185" measuredHeight="23">
     <font/>
     <items x="0" y="0" width="42" height="23" text="~Pealeht~"/>
-    <items link="New_Questionnaire.screen" x="60" y="0" width="66" height="23" text="Uus küsitlus"/>
-    <items x="144" y="0" width="21" height="23" text="Abi"/>
+    <items link="Avalik.screen" x="60" y="0" width="124" height="23" text="Avalikud Küsimustikud"/>
   </widgets>
   <widgets xsi:type="model:Label" id="29" x="416" y="968" text="Lihtne ja mugav" measuredWidth="306" measuredHeight="67">
     <font size="43px" underline="true"/>
