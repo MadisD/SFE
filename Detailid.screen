@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="96" y="47" width="969" height="797" text="Browser&#xA;http://www.OMAküsitlused.ee" measuredWidth="969" measuredHeight="797"/>
+  <widgets xsi:type="model:Placeholder" id="6" x="106" y="109" width="199" height="114" text="OML logo" measuredWidth="199" measuredHeight="114"/>
+  <widgets xsi:type="model:LinkBar" id="7" x="336" y="200" text="Pealeht, Uus küsitlus, ~Minu küsimustikud~" measuredWidth="250" measuredHeight="23">
+    <font/>
+    <items x="0" y="0" width="42" height="23" text="Pealeht"/>
+    <items x="60" y="0" width="66" height="23" text="Uus küsitlus"/>
+    <items x="144" y="0" width="105" height="23" text="~Minu küsimustikud~"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="8" x="944" y="184" text="Kasutaja: oml1111" measuredWidth="101" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="9" x="944" y="206" text="Logi Välja" measuredWidth="54" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="10" x="312" y="256" width="273" text="Pealkiri" measuredWidth="273" measuredHeight="53" textAlignment="Center">
+    <font size="32px"/>
+  </widgets>
+  <widgets xsi:type="model:Group" id="26" x="312" y="488" width="273" height="129" text="Grupp 1" measuredWidth="273" measuredHeight="129">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="12" x="312" y="308" width="273" text="Mis on teie lemmikvärv" measuredWidth="273" measuredHeight="23" textAlignment="Center">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="13" x="312" y="342" width="273" text="Lühikirjeldus" measuredWidth="273" measuredHeight="46" textAlignment="Center">
+    <font size="28px"/>
+  </widgets>
+  <widgets xsi:type="model:TextArea" id="14" x="312" y="387" width="273" height="52" text="Küsitluse eesmärk on välja selgitada mis lemmikvärv on kõige levinum." measuredWidth="273" measuredHeight="52">
+    <font underline="false"/>
+  </widgets>
+  <widgets xsi:type="model:List" id="16" x="336" y="507" width="273" text="( ) Mees&#xA;( ) Naine" measuredWidth="273" measuredHeight="48" border="false" alpha="0">
+    <font/>
+    <items x="0" y="2" width="273" height="22" text="( ) Mees"/>
+    <items x="0" y="24" width="273" height="22" text="( ) Naine"/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="17" x="312" y="456" width="273" text="Mis on su sugu?" measuredWidth="273" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="27" x="312" y="632" width="273" text="Mis on su lemmikvärvid?" measuredWidth="273" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Group" id="28" x="312" y="664" width="273" height="161" text="Värvigrupp" measuredWidth="273" measuredHeight="161">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:List" id="29" x="333" y="681" width="169" height="110" text="[] Sinine&#xA;[] Must&#xA;[] Valge&#xA;[] Punane" measuredWidth="169" measuredHeight="110" border="false" alpha="0">
+    <font/>
+    <items x="0" y="2" width="169" height="22" text="[] Sinine"/>
+    <items x="0" y="24" width="169" height="22" text="[] Must"/>
+    <items x="0" y="46" width="169" height="22" text="[] Valge"/>
+    <items x="0" y="68" width="169" height="22" text="[] Punane"/>
+  </widgets>
+  <widgets xsi:type="model:VScrollbar" id="34" x="809" y="240" height="604" measuredWidth="17" measuredHeight="604"/>
+  <widgets xsi:type="model:HLine" id="39" x="96" y="237" width="969" measuredWidth="969" measuredHeight="6"/>
+  <widgets xsi:type="model:TextField" id="50" x="115" y="10" text="Text field" measuredWidth="59" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Group" id="52" x="845" y="264" width="200" height="289" text="Küsimustikud" measuredWidth="200" measuredHeight="289">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="53" x="862" y="291" text="~Mis on teie lemmikvärv~" measuredWidth="126" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="54" x="862" y="320" text="Kui palju teete sporti" measuredWidth="111" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Chart" id="62" x="608" y="478" width="150" height="150" measuredWidth="150" measuredHeight="150"/>
+  <widgets xsi:type="model:Chart" id="68" x="608" y="670" width="150" height="150" measuredWidth="150" measuredHeight="150" chartType="column"/>
+  <widgets xsi:type="model:Label" id="55" x="646" y="510" text="44%" measuredWidth="28" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="56" x="702" y="541" text="56%" measuredWidth="28" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="58" x="619" y="692" text="35%" measuredWidth="28" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="59" x="646" y="671" text="25%" measuredWidth="28" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="60" x="688" y="654" text="17%" measuredWidth="28" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="61" x="720" y="720" text="23%" measuredWidth="28" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="63" x="322" y="510" text="1." measuredWidth="15" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="64" x="322" y="532" text="2." measuredWidth="15" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="66" x="632" y="510" text="1." measuredWidth="15" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="67" x="688" y="541" text="2." measuredWidth="15" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="69" x="322" y="681" text="1." measuredWidth="15" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="70" x="322" y="703" text="2." measuredWidth="15" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="71" x="322" y="724" text="3." measuredWidth="15" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="72" x="322" y="746" text="4." measuredWidth="15" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="73" x="625" y="819" text="1." measuredWidth="15" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="78" x="646" y="819" text="2." measuredWidth="15" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="79" x="699" y="819" text="3." measuredWidth="15" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="80" x="720" y="819" text="4." measuredWidth="15" measuredHeight="23">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
