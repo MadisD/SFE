@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="96" y="47" width="969" height="797" text="Browser&#xA;http://www.OMAküsitlused.ee" measuredWidth="969" measuredHeight="797"/>
+  <widgets xsi:type="model:Placeholder" id="6" x="106" y="109" width="199" height="114" text="OML logo" measuredWidth="199" measuredHeight="114"/>
+  <widgets xsi:type="model:LinkBar" id="7" x="336" y="200" text="Pealeht, ~Uus küsitlus~" measuredWidth="127" measuredHeight="23">
+    <font/>
+    <items x="0" y="0" width="42" height="23" text="Pealeht"/>
+    <items x="60" y="0" width="66" height="23" text="~Uus küsitlus~"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="8" x="944" y="184" text="Kasutaja: oml1111" measuredWidth="101" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="9" x="944" y="206" text="Logi Välja" measuredWidth="54" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="10" x="312" y="256" width="273" text="Pealkiri" measuredWidth="273" measuredHeight="53" textAlignment="Center">
+    <font size="32px"/>
+  </widgets>
+  <widgets xsi:type="model:Group" id="26" x="312" y="488" width="273" height="129" text="Grupp 1" measuredWidth="273" measuredHeight="129">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="12" x="312" y="308" width="273" text="Mis on teie lemmikvärv" measuredWidth="273" measuredHeight="23" textAlignment="Center">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="13" x="312" y="342" width="273" text="Lühikirjeldus" measuredWidth="273" measuredHeight="46" textAlignment="Center">
+    <font size="28px"/>
+  </widgets>
+  <widgets xsi:type="model:TextArea" id="14" x="312" y="387" width="273" height="52" text="Küsitluse eesmärk on välja selgitada mis lemmikvärv on kõige levinum." measuredWidth="273" measuredHeight="52">
+    <font underline="false"/>
+  </widgets>
+  <widgets xsi:type="model:List" id="16" x="322" y="509" width="273" text="(o) Mees&#xA;( ) Naine&#xA;( ) Muu" measuredWidth="273" measuredHeight="70" border="false" alpha="0">
+    <font/>
+    <items x="0" y="2" width="273" height="22" text="(o) Mees"/>
+    <items x="0" y="24" width="273" height="22" text="( ) Naine"/>
+    <items x="0" y="46" width="273" height="22" text="( ) Muu"/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="17" x="312" y="456" width="273" text="Mis on su sugu?" measuredWidth="273" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="18" x="640" y="456" text="Kustuta" measuredWidth="43" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="19" x="640" y="495" text="Kustuta" measuredWidth="43" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="22" x="328" y="578" text="Lisa Valik" measuredWidth="51" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="23" x="528" y="512" text="Kustuta" measuredWidth="43" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="24" x="528" y="535" text="Kustuta" measuredWidth="43" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="25" x="528" y="556" text="Kustuta" measuredWidth="43" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="27" x="312" y="632" width="273" text="Mis on su lemmikvärvid?" measuredWidth="273" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Group" id="28" x="312" y="664" width="273" height="161" text="Värvigrupp" measuredWidth="273" measuredHeight="161">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:List" id="29" x="322" y="681" width="169" height="110" text="[x] Sinine&#xA;[x] Must&#xA;[x] Valge&#xA;[] Punane" measuredWidth="169" measuredHeight="110" border="false" alpha="0">
+    <font/>
+    <items x="0" y="2" width="169" height="22" text="[x] Sinine"/>
+    <items x="0" y="24" width="169" height="22" text="[x] Must"/>
+    <items x="0" y="46" width="169" height="22" text="[x] Valge"/>
+    <items x="0" y="68" width="169" height="22" text="[] Punane"/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="31" x="640" y="632" text="Kustuta" measuredWidth="43" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="32" x="640" y="671" text="Kustuta" measuredWidth="43" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="33" x="328" y="784" text="Lisa Valik" measuredWidth="51" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:VScrollbar" id="34" x="809" y="240" height="604" measuredWidth="17" measuredHeight="604"/>
+  <widgets xsi:type="model:Button" id="35" x="904" y="256" text="Lisa tekstiväli" measuredWidth="89" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="36" x="880" y="296" text="Lisa ühe valikuga grupp" measuredWidth="145" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="37" x="872" y="336" text="Lisa mitme valikuga grupp" measuredWidth="160" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Group" id="38" x="832" y="376" width="223" height="458" text="Küsitluse Struktuur" measuredWidth="223" measuredHeight="458">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:HLine" id="39" x="96" y="237" width="969" measuredWidth="969" measuredHeight="6"/>
+  <widgets xsi:type="model:Link" id="40" x="848" y="401" text="Pealkiri ja lühikirjeldus" measuredWidth="120" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="41" x="848" y="423" text="Mis on su sugu?" measuredWidth="88" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="42" x="848" y="444" text="Grupp1" measuredWidth="42" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="43" x="848" y="466" text="Mis on su lemmikvärvid?" measuredWidth="134" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="44" x="848" y="488" text="Värvigrupp" measuredWidth="61" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="45" x="848" y="512" text="Mida sa arvasid sellest ..." measuredWidth="131" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="46" x="848" y="535" text="Tagasiside grupp" measuredWidth="93" measuredHeight="23">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
