@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
   <widgets xsi:type="model:Browser" id="3" x="96" y="40" width="969" height="1700" text="Browser&#xA;http://www.OMAküsitlused.ee" measuredWidth="969" measuredHeight="1700"/>
-  <widgets xsi:type="model:LinkBar" id="12" x="919" y="192" text="Registreeri,Logi sisse" measuredWidth="130" measuredHeight="23">
+  <widgets xsi:type="model:LinkBar" id="12" x="904" y="200" text="Registreeri,Logi sisse" measuredWidth="130" measuredHeight="23">
     <font/>
     <items x="0" y="0" width="58" height="23" text="Registreeri"/>
     <items x="76" y="0" width="53" height="23" text="Logi sisse"/>
   </widgets>
   <widgets xsi:type="model:HLine" id="13" x="96" y="240" width="969" measuredWidth="969" measuredHeight="6"/>
-  <widgets xsi:type="model:Placeholder" id="14" x="106" y="109" width="199" height="114" text="OML logo" measuredWidth="199" measuredHeight="114" link=""/>
+  <widgets xsi:type="model:Placeholder" id="14" x="106" y="109" width="199" height="114" text="OML logo" measuredWidth="199" measuredHeight="114"/>
   <widgets xsi:type="model:VScrollbar" id="15" x="1048" y="99" height="1641" measuredWidth="17" measuredHeight="1641"/>
   <widgets xsi:type="model:Label" id="16" x="224" y="392" text="Looge kiiresti endale sobiv küsimustik " measuredWidth="726" measuredHeight="67">
     <font size="43px"/>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="96" y="47" width="969" height="797" text="Browser&#xA;http://www.OMAküsitlused.ee" measuredWidth="969" measuredHeight="797"/>
+  <widgets xsi:type="model:Placeholder" id="2" x="106" y="109" width="199" height="114" text="OML logo" measuredWidth="199" measuredHeight="114" link="Index.screen"/>
+  <widgets xsi:type="model:LinkBar" id="3" x="336" y="200" text="Pealeht, ~Uus küsitlus~,Minu küsimustikud" measuredWidth="250" measuredHeight="23">
+    <font/>
+    <items link="Index.screen" x="0" y="0" width="42" height="23" text="Pealeht"/>
+    <items x="60" y="0" width="66" height="23" text="~Uus küsitlus~"/>
+    <items link="Detailid.screen" x="144" y="0" width="105" height="23" text="Minu küsimustikud"/>
+  </widgets>
+  <widgets xsi:type="model:HLine" id="6" x="96" y="237" width="969" measuredWidth="969" measuredHeight="6"/>
+  <widgets xsi:type="model:LinkBar" id="7" x="904" y="200" text="Registreeri,Logi sisse" measuredWidth="130" measuredHeight="23">
+    <font/>
+    <items x="0" y="0" width="58" height="23" text="Registreeri"/>
+    <items x="76" y="0" width="53" height="23" text="Logi sisse"/>
+  </widgets>
+  <hRuler>
+    <guides position="56"/>
+  </hRuler>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

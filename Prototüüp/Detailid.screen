@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
-  <widgets xsi:type="model:Browser" id="1" x="96" y="47" width="969" height="797" text="Browser&#xA;http://www.OMAküsitlused.ee" measuredWidth="969" measuredHeight="797"/>
+  <widgets xsi:type="model:Browser" id="1" x="96" y="47" width="969" height="797" text="Browser&#xA;http://www.OMAküsitlused.ee/minukysitlused" measuredWidth="969" measuredHeight="797"/>
   <widgets xsi:type="model:Placeholder" id="6" x="106" y="109" width="199" height="114" text="OML logo" measuredWidth="199" measuredHeight="114" link="Index.screen"/>
   <widgets xsi:type="model:LinkBar" id="7" x="336" y="200" text="Pealeht, Uus küsitlus, ~Minu küsimustikud~" measuredWidth="250" measuredHeight="23">
     <font/>
