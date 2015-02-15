@@ -16,11 +16,11 @@
     <font/>
   </widgets>
   <widgets xsi:type="model:HLine" id="18" x="96" y="840" width="969" measuredWidth="969" measuredHeight="6"/>
-  <widgets xsi:type="model:LinkBar" id="23" x="336" y="200" text="~Pealeht~, Loo uus,Abi" measuredWidth="145" measuredHeight="23">
+  <widgets xsi:type="model:LinkBar" id="23" x="336" y="200" text="~Pealeht~, Uus küsitlus,Abi" measuredWidth="166" measuredHeight="23">
     <font/>
-    <items link="" x="0" y="0" width="42" height="23" text="~Pealeht~"/>
-    <items link="New_Questionnaire.screen" x="60" y="0" width="45" height="23" text="Loo uus"/>
-    <items x="123" y="0" width="21" height="23" text="Abi"/>
+    <items x="0" y="0" width="42" height="23" text="~Pealeht~"/>
+    <items link="New_Questionnaire.screen" x="60" y="0" width="66" height="23" text="Uus küsitlus"/>
+    <items x="144" y="0" width="21" height="23" text="Abi"/>
   </widgets>
   <widgets xsi:type="model:Label" id="29" x="416" y="968" text="Lihtne ja mugav" measuredWidth="306" measuredHeight="67">
     <font size="43px" underline="true"/>
