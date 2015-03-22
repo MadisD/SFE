@@ -14,12 +14,37 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+
 import webapp2
+import jinja2
+import os
+
+jinjaEnvironment = jinja2.Environment(autoescape = True,
+    		loader = jinja2.FileSystemLoader(os.path.join(os.path.dirname(__file__),'views')))
+
+
 
 class MainHandler(webapp2.RequestHandler):
+
     def get(self):
-        self.response.write("Message from Oliver-Matis Lill: See it's that easy")
+    	title = "QProject"
+    	templateVars = {
+    		'title': title
+    	}
+        template = jinjaEnvironment.get_template('index.html')
+        self.response.write(template.render(templateVars))
+
+class InfoHandler(webapp2.RequestHandler):
+
+    def get(self):
+        template = jinjaEnvironment.get_template('info.html')
+        self.response.write(template.render())
+
+
+
 
 app = webapp2.WSGIApplication([
-    ('/', MainHandler)
+    ('/', MainHandler),
+    ('/info.html', InfoHandler)
 ], debug=True)
