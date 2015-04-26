@@ -20,10 +20,7 @@ class Main extends CI_Controller {
 	 */
 	public function index()
 	{
-        $this->load->view('templates/header');
-
         $this->load->view('pages/main');
-        $this->load->view('templates/footer');
 
 	}
 
@@ -38,14 +35,6 @@ class Main extends CI_Controller {
 
     }
 
-
-
-    public function view($page){
-        //$this->load->view('templates/header', $data);
-        $this->load->view('pages/'.$page);
-        //$this->load->view('templates/footer', $data);
-    }
-
     public function getValues(){
         $this->load->model('get_db');
         $data['results'] = $this->get_db->sisu();
@@ -58,56 +47,56 @@ class Main extends CI_Controller {
         
     }
 
-    public function insertValues(){
-        $this->load->model('get_db');
-        $newRow = array(
-            'name' => "bob",
-            'password' => "secret",
-            'email' => 'bob@mail.cc'
+//    public function insertValues(){
+//        $this->load->model('get_db');
+//        $newRow = array(
+//            'name' => "bob",
+//            'password' => "secret",
+//            'email' => 'bob@mail.cc'
+//
+//        );
+//
+//        $this->get_db->insert1($newRow);
+//    }
 
-        );
+//    public function insertValues2(){
+//        $this->load->model('get_db');
+//        $newRow = array(
+//            array('name' => "Brotha",
+//                'password' => "secret",
+//                'email' => 'bro@mail.cc'),
+//            array('name' => "Second Brotha",
+//                'password' => "secret",
+//                'email' => 'bruh@mail.cc')
+//
+//        );
+//
+//        $this->get_db->insert2($newRow);
+//    }
 
-        $this->get_db->insert1($newRow);
-    }
+//    public function updateValues(){
+//        $this->load->model('get_db');
+//        $newRow = array(
+//            "name" => "BROUH",
+//            "password" => "doge"
+//        );
+//
+//        $this->get_db->update1($newRow);
+//        echo "work";
+//
+//    }
 
-    public function insertValues2(){
-        $this->load->model('get_db');
-        $newRow = array(
-            array('name' => "Brotha",
-                'password' => "secret",
-                'email' => 'bro@mail.cc'),
-            array('name' => "Second Brotha",
-                'password' => "secret",
-                'email' => 'bruh@mail.cc')
-
-        );
-
-        $this->get_db->insert2($newRow);
-    }
-
-    public function updateValues(){
-        $this->load->model('get_db');
-        $newRow = array(
-            "name" => "BROUH",
-            "password" => "doge"
-        );
-
-        $this->get_db->update1($newRow);
-        echo "work";
-
-    }
-
-    public function deleteValues(){
-
-        $this->load->model('get_db');
-
-        $oldRow = array(
-            'id' => "2"
-        );
-
-        $this->get_db->delete1($oldRow);
-
-    }
+//    public function deleteValues(){
+//
+//        $this->load->model('get_db');
+//
+//        $oldRow = array(
+//            'id' => "2"
+//        );
+//
+//        $this->get_db->delete1($oldRow);
+//
+//    }
 
 }
 
