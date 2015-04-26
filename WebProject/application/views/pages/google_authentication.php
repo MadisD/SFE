@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/google.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
 
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Open+Sans+Condensed:300|Raleway' rel='stylesheet' type='text/css'>
+    <title>OMAküsitlused</title>
 </head>
 <body>
 
@@ -42,10 +42,10 @@
                             <div id="content">
                                 <div class="col-md-5">
                                     <a href="<?php echo $authUrl; ?>">
-                                        <button type="button" class="btn btn-danger btn-lg">Logi sisse</button></a>
+                                        <p>Logi sisse</p></a>
                                 </div>
                                 <div class="col-md-5">
-                                    <a href="/"><button type="button" class="btn btn-default btn-lg">Cancel</button></a>
+                                    <a href="/"><p>Cancel</p></a>
                                 </div>
                             </div>
                             <!-- <img id="google_signin" src="<?php echo base_url(); ?>/assets/images/sign-in-button.jpg" alt="Sign In" > -->
