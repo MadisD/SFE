@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Bootstrap core CSS -->
-    <!--    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css"> -->
+      <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" type="text/css" href="/assets/css/cover.csss">
@@ -27,12 +27,9 @@
               <h3 class="masthead-brand">OMAküsitlused</h3>
               <nav>
                 <ul class="nav masthead-nav">
-                  <li><a href="index.php">Pealeht</a></li>
-                  <li><a href="kusitlus.php">Uus küstilus</a></li>
-                  <li><a href="../avalikud.php">Avalikud küsimustikud</a></li>
-				  <li><a href="../minukusimused.php">Minu küsimustikud</a></li>
-				  <li class="active"><a href="register.php">Registreeru</a></li>
-				  <li><a href="login.php">Logi sisse</a></li>
+                  <li><a href="/">Pealeht</a></li>
+				  <li class="active"><a href="register">Registreeru</a></li>
+				  <li><a href="http://oma.cs.ut.ee/login">Logi sisse</a></li>
                 </ul>
               </nav>
             </div>

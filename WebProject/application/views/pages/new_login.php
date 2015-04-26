@@ -27,12 +27,9 @@
               <h3 class="masthead-brand">OMAküsitlused</h3>
               <nav>
                 <ul class="nav masthead-nav">
-                  <li><a href="index.php">Pealeht</a></li>
-                  <li><a href="pages/kusitlus.php">Uus küstilus</a></li>
-                  <li><a href="../avalikud.php">Avalikud küsimustikud</a></li>
-				  <li><a href="../minukusimused.php">Minu küsimustikud</a></li>
-				  <li><a href="register.php">Registreeru</a></li>
-				  <li class="active"><a href="login.php">Logi sisse</a></li>
+                  <li><a href="/">Pealeht</a></li>
+				  <li><a href="register">Registreeru</a></li>
+				  <li class="active"><a href="login">Logi sisse</a></li>
                 </ul>
               </nav>
             </div>

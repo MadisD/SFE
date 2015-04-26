@@ -29,10 +29,8 @@
                 <ul class="nav masthead-nav">
                   <li><a href="/">Pealeht</a></li>
                   <li class="active"><a href="/main/getValues">Uus küstilus</a></li>
-                  <li><a href="/main/avalikud">Avalikud küsimustikud</a></li>
-				  <li><a href="../minukusimused.php">Minu küsimustikud</a></li>
-				  <li><a href="register.php">Registreeru</a></li>
-				  <li><a href="login.php">Logi sisse</a></li>
+				  <li><a href="/register">Registreeru</a></li>
+				  <li><a href="/login">Logi sisse</a></li>
                 </ul>
               </nav>
             </div>

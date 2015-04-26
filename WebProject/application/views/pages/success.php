@@ -37,7 +37,7 @@
 
             <div class="inner cover">
                 <h1 class="cover-heading">Registreerumine oli edukas.</h1>
-                <a href=<?php base_url(). "/login" ?>><button type="button" class="btn btn-primary btn-lg">Logi Sisse</button></a>
+                <a href="http://oma.cs.ut.ee/login"><button type="button" class="btn btn-primary btn-lg">Logi Sisse</button></a>
 
             </div>
 
