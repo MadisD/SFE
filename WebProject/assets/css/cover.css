@@ -117,6 +117,9 @@ body {
   font-weight: bold;
 }
 
+.row {
+	color:black;
+}
 
 /*
  * Footer
