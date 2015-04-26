@@ -38,7 +38,7 @@ class Register extends CI_Controller{
             $form = array();
             $form['username'] = $this->input->post("username");
             $form['password'] = md5($this->input->post("password"));
-            $form['email'] = $this->input->post("username");
+            $form['email'] = $this->input->post("email");
 
             if (self::createUser($form['username'],$form['password'],$form['email']) == true) {
                 redirect('register/success');
