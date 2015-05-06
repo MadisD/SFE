@@ -28,11 +28,23 @@
                     <h3 class="masthead-brand">OMAküsitlused</h3>
                     <nav>
                         <ul class="nav masthead-nav">
-                            <li class="active"><a href="/">Pealeht</a></li>
-                            <li><a href="/main/getValues">Kasutajad</a></li>
-                            <li><a href="register">Registreeru</a></li>
-                            <li><a href="/login">Logi sisse</a></li>
-                            <li><a href="/User_Authentication">Google logimine</a></li>
+                            <?php
+                            if ($this->session->userdata('is_logged')) {
+                                echo '<li><a href="' . base_url() . '">Pealeht</a></li>';
+                                echo '<li><a href="' . base_url("main/getValues") . '">Kasutajad</a></li>';
+
+                                $username = $this->session->userdata('username');
+                                echo '<li><h4>'. $username .'</h4></li>';
+                                echo '<li><a href="' . base_url("logout") . '">Logout</a></li>';
+                            } else {
+                                echo '<li><a href="' . base_url() . '">Pealeht</a></li>';
+                                echo '<li><a href="' . base_url("register") . '">Registreeru</a></li>';
+                                echo '<li><a href="' . base_url("login") . '">Logi sisse</a></li>';
+                                echo '<li><a href="' . base_url("user_authentication") . '">Google logimine</a></li>';
+                            }
+                            ?>
+
+
                         </ul>
                     </nav>
                 </div>
@@ -40,7 +52,10 @@
             </div>
           <div class="inner cover">
             <h1 class="cover-heading">Looge kiiresti endale sobiv küsimustik</h1><p class="lead">
+
               <a href="/uus" class="btn btn-lg btn-default">Loo uus vorm</a>
+
+<!--                  --><?php //$this->session->sess_destroy() ?>
             </p>
           </div>
 

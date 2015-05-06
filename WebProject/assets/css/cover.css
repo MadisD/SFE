@@ -58,6 +58,9 @@ body {
   padding: 30px;
 }
 
+.cancelbtn{
+    color: #080808;
+}
 
 /*
  * Header
