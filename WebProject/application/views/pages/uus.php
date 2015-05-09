@@ -44,6 +44,8 @@
 					<input type="number" min="0" id="textfield2" value=""><button onclick="myRadiobutton()">Radiobutton</button><br>
 					<input type="number" min="0" id="textfield3" value=""><button onclick="myCheckbox()">Checkbox</button><br>
 					<button onclick="myReset()">Reset</button><br>
+
+
 					
 				</div>
 			</div>

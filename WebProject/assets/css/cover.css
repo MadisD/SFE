@@ -124,6 +124,8 @@ body {
 	color:black;
 }
 
+.innercov
+
 /*
  * Footer
  */
@@ -166,4 +168,14 @@ body {
   .cover-container {
     width: 1024px;
   }
+}
+
+
+#form{
+    color: #000000;
+}
+
+.top-right{
+    color: #000000;
+    padding: 5%;
 }
