@@ -6,9 +6,13 @@ class NewForm extends CI_Controller{
     public function index(){
 
         if ($this->session->userdata('is_logged')) {
-            $this->load->view('pages/newFormView');
+            $data = array();
+            $empty = array('empty' => 0);
+            $data['empty'] = $empty;
+
+            $this->load->view('pages/newFormView',$data);
         } else {
-            show_404();
+            redirect(base_url('Login'));
         }
     }
 
@@ -29,9 +33,18 @@ class NewForm extends CI_Controller{
                 }
             }
 
-            $this->form_create_model->addForm($pealkiri,$kirjeldus,$content,$kasutaja);
+            if (sizeof($content) == 0) {
+                $data = array();
+                $empty = array('empty' => 1);
+                 $data['empty'] = $empty;
+                $this->load->view('pages/newFormView',$data);
+            }
+            else{
+                $this->form_create_model->addForm($pealkiri,$kirjeldus,$content,$kasutaja);
+                redirect(base_url('MyForms'));
+            }
 
-            redirect(base_url('MyForms'));
+
         } else {
             show_404();
         }

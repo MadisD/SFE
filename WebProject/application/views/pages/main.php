@@ -42,7 +42,7 @@
                                 echo '<li><a href="' . base_url() . '">Pealeht</a></li>';
                                 echo '<li><a href="' . base_url("register") . '">Registreeru</a></li>';
                                 echo '<li><a href="' . base_url("login") . '">Logi sisse</a></li>';
-                                echo '<li><a href="' . base_url("user_authentication") . '">Google logimine</a></li>';
+                                echo '<li><a href="' . base_url("User_Authentication") . '">Google logimine</a></li>';
                             }
                             ?>
 

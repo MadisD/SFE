@@ -23,6 +23,39 @@ function newTextField() {
     '</br>';
 }
 
+function addRadioOption(count){
+    option = document.getElementsByClassName("radiofieldOption"+count).length
+    document.getElementsByClassName("options"+count)[0].innerHTML +=  '<label for="radio'+count+'">Sisesta valik siia</label>' +
+    '<input  type="radio" name="radio" />' +
+    '<input type="text" class="radiofieldOption'+count+'" name="radiofieldOption'+count+'-'+option+
+    '" required/>' +
+    '</br>';
+
+
+
+}
+
+
+function newRadioField() {
+    count = document.getElementsByClassName("radiofield").length;
+    option = 1;
+    document.getElementById("form-body").innerHTML += '<label for="radiofieldQuestion'+count+'">Sisesta küsimus siia</label>';
+    document.getElementById("form-body").innerHTML += ' <div class="radiofield radiofield'+count+'"> <input type="text" name="radiofieldQuestion'+count+
+    '" required/>' +
+    '</br>' +
+    '<div class="options'+count+'">' +
+    '<label for="radio'+count+'">Sisesta valik siia</label>' +
+    '<input  type="radio" name="radio" />' +
+    '<input type="text" class="radiofieldOption'+count+'" name="radiofieldOption'+count+'-'+count+
+    '" required/>' +
+    '</br>' +
+    '</div>' +
+    '</br>' +
+    '<button type="button" onclick="addRadioOption(count)">Lisa valik</button>' +
+    '</div>';
+
+}
+
 
 function myTextfield() {
 	i = 0;

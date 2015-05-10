@@ -14,8 +14,12 @@ class Form extends CI_Controller{
     }
 
     public function submit(){
+        $this->load->model('form_submit_model');
+        $data = $_POST;
+        $this->form_submit_model->submitForm($data);
 
-        echo "VALMIMISEL";
+
+        $this->load->view('pages/submitSucceedView');
 
     }
 

@@ -51,7 +51,14 @@
                 <hr>
             </div>
             <div class="inner cover">
-    
+                <?php
+                if ($empty['empty'] == 1) {
+                    echo '<h3 id="myError"> Lisage vähemalt üks küsimus! </h3>';
+                }
+
+                ?>
+
+
                 <form id="form" action="<?php echo base_url("NewForm/create"); ?>" method="post" >
                     <h3>Küsitluse pealkiri</h3>
                     <input type="text" name="pealkiri" required/>
@@ -61,17 +68,21 @@
 
                     <div id="form-body">
 
+
+
                     </div>
 
                     <br/>
                     <input class="form-submit" type="submit" value="Loo"/>
 
                 </form>
-                
+
             </div>
 
             <div class="top-right" >
                 <button onclick="newTextField()">Lisa vabatekstiga küsimus</button>
+<!--                <button onclick="newRadioField()">Lisa ühe õige valikuga küsimus</button>-->
+
 
                 <button onclick="resetForm()">Puhasta väljad</button>
 
