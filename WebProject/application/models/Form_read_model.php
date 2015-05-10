@@ -21,6 +21,21 @@ class Form_read_model extends CI_Model{
         $this->db->query($query2,$arg);
 
 
+        $query4 = "Select id FROM submit_info where form_id =?";
+        $qResult = $this->db->query($query4,$arg);
+
+        $submits = $qResult->result_array();
+
+        foreach ($submits as $key => $value) {
+            $args = array($value);
+            $delete = "DELETE FROM submit_content where submit_id = ?";
+            $this->db->query($delete,$args);
+        }
+
+        $query3 = "DELETE FROM submit_info where form_id =?";
+        $this->db->query($query3,$arg);
+
+
     }
 
     public function getFullForm($form_id){
@@ -52,5 +67,26 @@ class Form_read_model extends CI_Model{
 
         return $result;
     }
+
+    public function getQuestions($form_id){
+    $query3 = "SELECT form_content.form_type, form_content.content,form_content.question_id from form_content WHERE form_content.form_id = ?";
+    $arg = array($form_id);
+
+    $result = $this->db->query($query3,$arg);
+
+    return $result->result_array();
+    }
+
+
+    public function getDetails($form_id){
+        $query2 = "SELECT form.pealkiri,form.kirjeldus,form.date from form where form.form_id = ?";
+        $arg = array($form_id);
+
+        $result = $this->db->query($query2,$arg);
+
+        return $result->result_array();
+    }
+
+
 
 }

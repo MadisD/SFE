@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81b3f8b2-84a0-4557-91fd-7d878a400f22" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Form_create_model.php" afterPath="$PROJECT_DIR$/application/models/Form_create_model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Form_read_model.php" afterPath="$PROJECT_DIR$/application/models/Form_read_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Form_submit_model.php" afterPath="$PROJECT_DIR$/application/models/Form_submit_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Form_statistic_model.php" afterPath="$PROJECT_DIR$/application/models/Form_statistic_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Statistics.php" afterPath="$PROJECT_DIR$/application/controllers/Statistics.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/pages/myFormsView.php" afterPath="$PROJECT_DIR$/application/views/pages/myFormsView.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WebProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,31 +36,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="form.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/form.js">
+      <file leaf-file-name="Form.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/Form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1496">
-              <caret line="48" column="91" selection-start-line="48" selection-start-column="91" selection-end-line="48" selection-end-column="91" />
+            <state vertical-scroll-proportion="-11.769231" vertical-offset="51" max-vertical-offset="527">
+              <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyForms.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/MyForms.php">
+      <file leaf-file-name="showDataView.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/pages/showDataView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="18.807692" vertical-offset="506" max-vertical-offset="952">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="63" />
-              <folding />
+            <state vertical-scroll-proportion="0.65695065" vertical-offset="659" max-vertical-offset="1615">
+              <caret line="56" column="69" selection-start-line="56" selection-start-column="69" selection-end-line="56" selection-end-column="69" />
+              <folding>
+                <marker date="1431299409546" expanded="true" signature="3283:3361" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Statistics.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Statistics.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Statistics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22869955" vertical-offset="0" max-vertical-offset="446">
-              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+            <state vertical-scroll-proportion="-9.307693" vertical-offset="336" max-vertical-offset="799">
+              <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -70,19 +71,12 @@
       <file leaf-file-name="Form_statistic_model.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/Form_statistic_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="289">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewForm.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/NewForm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.653847" vertical-offset="255" max-vertical-offset="1071">
-              <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="43" selection-end-column="46" />
-              <folding />
+            <state vertical-scroll-proportion="-13.076923" vertical-offset="119" max-vertical-offset="629">
+              <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+              <folding>
+                <marker date="1431299155719" expanded="true" signature="186:385" placeholder="SELECT submi..submit_info..." />
+                <marker date="1431299155719" expanded="true" signature="579:644" placeholder="SELECT COUNT..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,7 +99,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/views/pages/demo.php" />
         <option value="$PROJECT_DIR$/application/views/pages/kusitlus.php" />
         <option value="$PROJECT_DIR$/application/models/getDb.php" />
         <option value="$PROJECT_DIR$/application/models/get_db.php" />
@@ -150,12 +143,13 @@
         <option value="$PROJECT_DIR$/assets/js/form.js" />
         <option value="$PROJECT_DIR$/application/controllers/NewForm.php" />
         <option value="$PROJECT_DIR$/application/views/pages/newFormView.php" />
+        <option value="$PROJECT_DIR$/application/models/Form_create_model.php" />
+        <option value="$PROJECT_DIR$/application/models/Form_submit_model.php" />
+        <option value="$PROJECT_DIR$/application/models/Form_read_model.php" />
         <option value="$PROJECT_DIR$/application/views/pages/myFormsView.php" />
         <option value="$PROJECT_DIR$/application/models/Form_statistic_model.php" />
-        <option value="$PROJECT_DIR$/application/models/Form_create_model.php" />
-        <option value="$PROJECT_DIR$/application/models/Form_read_model.php" />
-        <option value="$PROJECT_DIR$/application/models/Form_submit_model.php" />
         <option value="$PROJECT_DIR$/application/controllers/Statistics.php" />
+        <option value="$PROJECT_DIR$/application/views/pages/showDataView.php" />
       </list>
     </option>
   </component>
@@ -510,7 +504,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="780" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19743179" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -558,13 +552,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76282054" vertical-offset="0" max-vertical-offset="544">
-          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
@@ -820,13 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/pages/answerFormView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42600897" vertical-offset="1323" max-vertical-offset="1955">
-          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/pages/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.076233186" vertical-offset="629" max-vertical-offset="1360">
@@ -849,14 +829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1496">
-          <caret line="48" column="91" selection-start-line="48" selection-start-column="91" selection-end-line="48" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/Form_create_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4955157" vertical-offset="204" max-vertical-offset="1105">
@@ -867,53 +839,6 @@
             <marker date="1431289272018" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
             <marker date="1431289272018" expanded="true" signature="-1:-1" placeholder="SELECT id FR..form..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/NewForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.653847" vertical-offset="255" max-vertical-offset="1071">
-          <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="43" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Form_statistic_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="289">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Form_read_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.15704387" vertical-offset="561" max-vertical-offset="1037">
-          <caret line="29" column="95" selection-start-line="29" selection-start-column="95" selection-end-line="29" selection-end-column="95" />
-          <folding>
-            <marker date="1431289471675" expanded="true" signature="-1:-1" placeholder="SELECT form_..." />
-            <marker date="1431289471675" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1431289471675" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1431289471675" expanded="true" signature="-1:-1" placeholder="SELECT User...User..." />
-            <marker date="1431289471675" expanded="true" signature="-1:-1" placeholder="SELECT form...form..." />
-            <marker date="1431289471675" expanded="true" signature="-1:-1" placeholder="SELECT form_..form_content..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/pages/myFormsView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9399538" vertical-offset="732" max-vertical-offset="1581">
-          <caret line="67" column="75" selection-start-line="67" selection-start-column="75" selection-end-line="67" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/MyForms.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="18.807692" vertical-offset="506" max-vertical-offset="952">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -929,19 +854,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Form.php">
+    <entry file="file://$PROJECT_DIR$/assets/js/form.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8004484" vertical-offset="0" max-vertical-offset="527">
-          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+        <state vertical-scroll-proportion="1.3333334" vertical-offset="204" max-vertical-offset="1496">
+          <caret line="48" column="91" selection-start-line="48" selection-start-column="91" selection-end-line="48" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/pages/answerFormView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.6367712" vertical-offset="48" max-vertical-offset="1955">
+          <caret line="72" column="83" selection-start-line="0" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/NewForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.77130044" vertical-offset="370" max-vertical-offset="1071">
+          <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="43" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Form_read_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8429561" vertical-offset="230" max-vertical-offset="1649">
+          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+          <folding>
+            <marker date="1431298418424" expanded="true" signature="-1:-1" placeholder="SELECT form_..." />
+            <marker date="1431298418424" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1431298418424" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1431298418424" expanded="true" signature="-1:-1" placeholder="Select id FR..submit_info..." />
+            <marker date="1431298418424" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1431298418424" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1431298418424" expanded="true" signature="-1:-1" placeholder="SELECT User...User..." />
+            <marker date="1431298418424" expanded="true" signature="-1:-1" placeholder="SELECT form...form..." />
+            <marker date="1431298418424" expanded="true" signature="-1:-1" placeholder="SELECT form_..form_content..." />
+            <marker date="1431298418424" expanded="true" signature="-1:-1" placeholder="SELECT form_..form_content..." />
+            <marker date="1431298418424" expanded="true" signature="-1:-1" placeholder="SELECT form...form..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/MyForms.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.5246637" vertical-offset="251" max-vertical-offset="952">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Statistics.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22869955" vertical-offset="0" max-vertical-offset="446">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        <state vertical-scroll-proportion="-9.307693" vertical-offset="336" max-vertical-offset="799">
+          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Form_statistic_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.076923" vertical-offset="119" max-vertical-offset="629">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding>
+            <marker date="1431299155719" expanded="true" signature="186:385" placeholder="SELECT submi..submit_info..." />
+            <marker date="1431299155719" expanded="true" signature="579:644" placeholder="SELECT COUNT..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/pages/myFormsView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7829099" vertical-offset="783" max-vertical-offset="1581">
+          <caret line="66" column="139" selection-start-line="66" selection-start-column="139" selection-end-line="66" selection-end-column="139" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231" vertical-offset="51" max-vertical-offset="527">
+          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/pages/showDataView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65695065" vertical-offset="659" max-vertical-offset="1615">
+          <caret line="56" column="69" selection-start-line="56" selection-start-column="69" selection-end-line="56" selection-end-column="69" />
+          <folding>
+            <marker date="1431299409546" expanded="true" signature="3283:3361" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

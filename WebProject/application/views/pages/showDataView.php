@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,6 +32,8 @@
                             if ($this->session->userdata('is_logged')) {
                                 echo '<li><a href="' . base_url() . '">Pealeht</a></li>';
                                 echo '<li><a href="' . base_url("main/getValues") . '">Kasutajad</a></li>';
+                                echo '<li><a href="' . base_url("NewForm") . '">Uus Vorm    </a></li>';
+                                echo '<li><a href="' . base_url("MyForms") . '">Minu Küsitlused</a></li>';
 
                                 $username = $this->session->userdata('username');
                                 echo '<li><h4>'. $username .'</h4></li>';
@@ -40,7 +42,7 @@
                                 echo '<li><a href="' . base_url() . '">Pealeht</a></li>';
                                 echo '<li><a href="' . base_url("register") . '">Registreeru</a></li>';
                                 echo '<li><a href="' . base_url("login") . '">Logi sisse</a></li>';
-                                echo '<li><a href="' . base_url("user_authentication") . '">Google logimine</a></li>';
+                                echo '<li><a href="' . base_url("User_Authentication") . '">Google logimine</a></li>';
                             }
                             ?>
 
@@ -51,25 +53,26 @@
                 <hr>
             </div>
             <div class="inner cover">
-
-                <h3>Minu Küsitlused</h3>
                 <?php
-                foreach ($forms as $key => $value) {
-                    echo '<h4>Küsitlus nr '.$key.'</h4>';
-                    echo '<p>Pealkiri: '.$value['pealkiri'].'</p>';
-                    if (strlen($value['kirjeldus']) > 0) {
-                        echo '<p>Kirjeldus: '. $value['kirjeldus'].'</p>';
+                echo '<h4>Küsimusele on vastatud : '.$submits['count'].' korda</h4>';
+
+
+                foreach ($textQuestions as $key => $value) {
+                    echo '<h3>'.$value.'</h3>';
+                    $count = 1;
+                    foreach ($textAnswers[$key] as $value) {
+                        echo '<label for="text'.$key.'">Vastus'.$count.':</label>';
+                        echo '<p class="text'.$key.'">'.$value.'</p>';
+                        $count++;
                     }
-                    echo '<p>Loodud: '.$value['date'].'</p>';
+
                     echo '</br>';
-                    
-                    echo '<form method="get" action="'.base_url("MyForms/deleteForm").'/' . $value['form_id'].'"> <input type="submit" value="Kustuta Vorm"/></form>';
-                    echo '<form method="get" action="'.base_url("Form/getForm").'/' . $value['form_id'].'"> <input type="submit" value="Vaata Vormi"/></form>';
-                    echo '<form method="get" action="'.base_url("Statistics/getData").'/' . $value['form_id'].'"> <input type="submit" value="Vaata Vastuseid"/></form>';
                 }
                 ?>
 
 
+
+            </div>
 
 
         </div>
@@ -81,7 +84,6 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script src="/assets/js/form.js"></script>
 <!-- Placed at the end of the document so the pages load faster -->
 </body>
 </html>
