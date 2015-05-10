@@ -14,12 +14,13 @@ class Form_submit_model extends CI_Model{
         $submit_id = $this->getId();
 
         foreach ($data as $key => $value) {
-            $newQuery = "INSERT INTO submit_content (submit_id,form_type,content) VALUES (?,?,?)";
+            $newQuery = "INSERT INTO submit_content (submit_id,question_id,form_type,content) VALUES (?,?,?,?)";
             $type = explode("field",$key);
             $type_id = -1;
             if ($type[0] == "text") {
                 $type_id = 1;
-                $arg = array($submit_id,$type_id,$value);
+                $question_id = $type[1];
+                $arg = array($submit_id,$question_id,$type_id,$value);
                 $this->db->query($newQuery,$arg) or die(mysql_error());
             }
         }

@@ -65,6 +65,7 @@
                     
                     echo '<form method="get" action="'.base_url("MyForms/deleteForm").'/' . $value['form_id'].'"> <input type="submit" value="Kustuta Vorm"/></form>';
                     echo '<form method="get" action="'.base_url("Form/getForm").'/' . $value['form_id'].'"> <input type="submit" value="Vaata Vormi"/></form>';
+                    echo '<form method="get" action="'.base_url("Statistics/getForm").'/' . $value['form_id'].'"> <input type="submit" value="Vaata Vastuseid"/></form>';
                 }
                 ?>
 

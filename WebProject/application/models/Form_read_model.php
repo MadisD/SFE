@@ -27,7 +27,7 @@ class Form_read_model extends CI_Model{
         //$query = "SELECT User.name as username ,form.pealkiri,form.kirjeldus,form.date,form_content.form_type, form_content.content FROM User INNER JOIN form ON User.id = form.user_id INNER JOIN form_content ON form.form_id = form_content.form_id where form.form_id = ?";
         $query1 = "SELECT User.name FROM User INNER JOIN form ON User.id = form.user_id where form.form_id = ?";
         $query2 = "SELECT form.pealkiri,form.kirjeldus,form.date from form where form.form_id = ?";
-        $query3 = "SELECT form_content.form_type, form_content.content from form_content WHERE form_content.form_id = ?";
+        $query3 = "SELECT form_content.form_type, form_content.content,form_content.question_id from form_content WHERE form_content.form_id = ?";
         $arg = array($form_id);
 
 

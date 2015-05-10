@@ -23,13 +23,14 @@ class Form_create_model extends CI_Model{
 
 
         foreach ($content as $key => $value) {
-            $newQuery = "INSERT INTO form_content (form_id,form_type,content) VALUES (?,?,?)";
+            $newQuery = "INSERT INTO form_content (form_id,question_id,form_type,content) VALUES (?,?,?,?)";
             $type = explode("field",$key);
             $type_id = -1;
+            $question_id = $type[1];
             if ($type[0] == "text") {
                 $type_id = 1;
             }
-            $arg = array($form_id,$type_id,$value);
+            $arg = array($form_id,$question_id,$type_id,$value);
             $this->db->query($newQuery,$arg) or die(mysql_error());
         }
 
