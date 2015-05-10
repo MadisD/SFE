@@ -37,8 +37,10 @@ class Login extends CI_Controller{
                 $usr_result = $this->login_model->get_user($username, $password);
                 if ($usr_result > 0) //active user record is present
                 {
+                     $user_id = $this->login_model->get_id($username);
                     //set the session variables
                     $sessiondata = array(
+                        'user_id' => $user_id,
                         'username' => $username,
                         'is_logged' => TRUE
                     );

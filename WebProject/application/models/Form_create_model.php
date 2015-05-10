@@ -5,7 +5,7 @@ class Form_create_model extends CI_Model{
 
 
     public function addForm($pealkiri,$kirjeldus,$content,$kasutaja){
-        $user_id = $this->getUserId($kasutaja);
+        $user_id = $this->session->userdata('user_id');
         $form_id = $this->getId();
 
         if (strlen($kirjeldus) > 0) {
@@ -53,21 +53,7 @@ class Form_create_model extends CI_Model{
         return $max++;
     }
 
-    private function getUserId($username){
-        $query ="SELECT id FROM User WHERE name = ?";
-        $arg = array($username);
-        $id = $this->db->query($query,$arg)or die(mysql_error());
 
-        if ($id->num_rows()== 0) {
-            echo "User not found. Huge error";
-        } else {
-        foreach ($id->result_array() as $row)
-        {
-            return  $row['id'];
-        }
-        }
-        //echo $row['Object']['id'];
-    }
 
 
 }

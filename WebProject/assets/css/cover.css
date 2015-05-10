@@ -170,6 +170,9 @@ body {
   }
 }
 
+.inner.cover{
+    color: #000000;
+}
 
 #form{
     color: #000000;

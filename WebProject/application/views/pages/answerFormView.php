@@ -52,12 +52,45 @@
                 </div>
                 <hr>
             </div>
-          <div class="inner cover">
-            <h1 class="cover-heading">Looge kiiresti endale sobiv küsimustik</h1><p class="lead">
+            <div class="inner cover">
+                <h1 class="cover-heading">Looge kiiresti endale sobiv küsimustik</h1><p class="lead">
 
-              <a href="<?php echo base_url("NewForm") ?> " class="btn btn-lg btn-default">Loo uus vorm</a>
+                    <?php
+                    echo 'Küsitluse looja -> ' . $form_data['name'];
+                    echo '</br>';
+                    echo 'Pealkiri -> ' . $form_data['pealkiri'];
+                    echo '</br>';
+                    if (strlen($form_data['kirjeldus'])>0) {
+                        echo 'Kirjeldus -> ' . $form_data['kirjeldus'];
+                        echo '</br>';
+                    }
+                    echo 'Küsitlus loodi -> ' . $form_data['date'];
+                    echo '</br>';
 
-          </div>
+
+                    ?>
+    
+                <form method="post" action="<?php echo base_url('Form/submit') ?>">
+                    <?php
+                    $textCount = 0;
+                    $radioCount = 0;
+                    $optionCount = 0;
+                    foreach ($form_data['sisu'] as $row) {
+                        $type =  $row['form_type'];
+                        if ($type == 1) {
+
+                            echo '<label for="textfield'.$textCount.'">'.$row['content'].'</label>';
+                            echo '<input type="text" name="textfield'.$textCount.'" required/>';
+                            echo '</br>';
+                            $textCount++;
+                        }
+                    }
+                    ?>
+                    <input type="submit" value="Salvesta vastused"/>
+                </form>
+
+
+            </div>
 
 
         </div>

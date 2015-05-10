@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,8 +32,6 @@
                             if ($this->session->userdata('is_logged')) {
                                 echo '<li><a href="' . base_url() . '">Pealeht</a></li>';
                                 echo '<li><a href="' . base_url("main/getValues") . '">Kasutajad</a></li>';
-                                echo '<li><a href="' . base_url("NewForm") . '">Uus Vorm    </a></li>';
-                                echo '<li><a href="' . base_url("MyForms") . '">Minu Küsitlused</a></li>';
 
                                 $username = $this->session->userdata('username');
                                 echo '<li><h4>'. $username .'</h4></li>';
@@ -52,12 +50,25 @@
                 </div>
                 <hr>
             </div>
-          <div class="inner cover">
-            <h1 class="cover-heading">Looge kiiresti endale sobiv küsimustik</h1><p class="lead">
+            <div class="inner cover">
 
-              <a href="<?php echo base_url("NewForm") ?> " class="btn btn-lg btn-default">Loo uus vorm</a>
+                <h3>Minu Küsitlused</h3>
+                <?php
+                foreach ($forms as $key => $value) {
+                    echo '<h4>Küsitlus nr '.$key.'</h4>';
+                    echo '<p>Pealkiri: '.$value['pealkiri'].'</p>';
+                    if (strlen($value['kirjeldus']) > 0) {
+                        echo '<p>Kirjeldus: '. $value['kirjeldus'].'</p>';
+                    }
+                    echo '<p>Loodud: '.$value['date'].'</p>';
+                    echo '</br>';
+                    
+                    echo '<form method="get" action="'.base_url("MyForms/deleteForm").'/' . $value['form_id'].'"> <input type="submit" value="Kustuta Vorm"/></form>';
+                    echo '<form method="get" action="'.base_url("Form/getForm").'/' . $value['form_id'].'"> <input type="submit" value="Vaata Vormi"/></form>';
+                }
+                ?>
 
-          </div>
+
 
 
         </div>
@@ -69,6 +80,7 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="/assets/js/form.js"></script>
 <!-- Placed at the end of the document so the pages load faster -->
 </body>
 </html>
