@@ -52,6 +52,14 @@ class User_Authentication extends CI_Controller {
             $userData = $objOAuthService->userinfo->get();
             $data['userData'] = $userData;
             $_SESSION['access_token'] = $client->getAccessToken();
+
+
+
+            $this->session->set_userdata(array(
+                'username' => $userData->name,
+                'email' => $userData->email,
+                'is_logged' => TRUE
+            ));
         } else {
             $authUrl = $client->createAuthUrl();
             $data['authUrl'] = $authUrl;
@@ -63,6 +71,7 @@ class User_Authentication extends CI_Controller {
 // Unset session and logout
     public function logout() {
         unset($_SESSION['access_token']);
+        $this->session->sess_destroy();
         redirect(base_url());
     }
 }

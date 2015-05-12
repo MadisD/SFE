@@ -54,7 +54,7 @@
             </div>
           <div class="inner cover">
             <h1 class="cover-heading">Looge kiiresti endale sobiv küsimustik</h1><p class="lead">
-              <a href="<?php echo base_url("NewForm") ?> " class="btn btn-lg btn-default">Loo uus vorm</a>
+              <a href="<?php echo base_url("NewForm") ?> " class="btn btn-lg btn-primary">Loo uus vorm</a>
 
           </div>
 

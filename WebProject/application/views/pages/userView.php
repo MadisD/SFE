@@ -68,9 +68,8 @@
                         source2.onmessage = function(event) {
                             if (last < parseInt(event.lastEventId) && last !== 0) {
                                 pieces = event.data.split("|");
-                                document.getElementById("users").innerHTML += "<p>Kasutajanimi: "+pieces[0]+"</p>";
-                                document.getElementById("users").innerHTML += "<p>Email: "+pieces[1]+"</p>";
-                                document.getElementById("users").innerHTML += "</br>";
+                                document.getElementById("new-user").innerHTML += "<tr><td> "+pieces[0]+"</td>"+"<td> "+pieces[1]+"</td></tr>";
+                               //document.getElementById("users").innerHTML += "</br>";
                             }
                             last = parseInt(event.lastEventId);
 
@@ -87,19 +86,27 @@
 
                 </div>
 
-
+                <table id="new-user" class="table">
                 <div id="users">
+                    <tr>
+                        <th>Kasutajanimi</th>
+                        <th>E-Mail</th>
+                    </tr>
 
                     <?php
                     foreach ($results as $row) {
-                        echo "<p>Kasutajanimi: $row->name</p>";
-                        echo "<p>E-Mail: $row->email</p>";
-                        echo "<br/>";
+                        echo '<tr>';
+                        echo "<td> $row->name</td>";
+                        echo "<td> $row->email</td>";
+                        echo '</tr>';
+
                     }
                     ?>
 
 
                 </div>
+
+                </table>
 
           </div>
 

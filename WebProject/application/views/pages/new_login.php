@@ -38,7 +38,8 @@
 
           <div class="inner cover">
                       <div class="row">
-                          <div class="col-lg-6 col-sm-4 well">
+                          <div class="col-lg-4"></div>
+                          <div class="col-lg-4 col-sm-4 well">
                               <?php
                               $attributes = array("class" => "form-horizontal", "id" => "loginform", "name" => "loginform");
                               echo form_open("login/index", $attributes);?>
@@ -70,9 +71,9 @@
 
                                   <div class="form-group">
                                       <div class="col-lg-12 col-sm-12 text-center">
-                                          <input id="btn_login" name="btn_login" type="submit" class="btn btn-default" value="Login" />
-                                          <input id="btn_cancel" name="btn_cancel" type="reset" class="btn btn-default" value="Reset" />
-                                          <a href="/"><p id="cancelbtn">Cancel</p></a>
+                                          <input id="btn_login" name="btn_login" type="submit" class="btn btn-primary" value="Login" />
+                                          <input id="btn_cancel" name="btn_cancel" type="reset" class="btn btn-danger" value="Reset" />
+                                          <a href="/"><p class="btn btn-danger" id="cancelbtn">Cancel</p></a>
                                       </div>
                                   </div>
                               </fieldset>

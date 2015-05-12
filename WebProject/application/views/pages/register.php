@@ -10,7 +10,7 @@
       <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/cover.csss">
+    <link rel="stylesheet" type="text/css" href="/assets/css/cover.css">
 
     <title>OMAküsitlused</title>
   </head>
@@ -36,9 +36,12 @@
 			<hr>
           </div>
 
-          <div class="fields">
+            <div class="fields col-lg-4">
+
+            </div>
+          <div class="fields col-lg-5">
               <?=form_open(base_url()."register")?>
-                    <table>
+                    <table class="table">
                         <tr>
                             <td>Username
                             <td> <?=form_input(array("name"=> "username", "value" => set_value("username")))?>
@@ -59,9 +62,9 @@
                             <td> <?=form_input(array("name"=> "email", "value" => set_value("email")))?>
                             <td> <?=form_error("email")?>
                         </tr>
-
                         <tr>
-                           <td> <?=form_submit(array("name"=>"submit","value"=> "Register"))?>
+                            <td class="col-lg-4" ></td>
+                           <td> <?=form_submit(array("name"=>"submit","value"=> "Register","class" => "btn btn-success col-lg-5" ))?>
                         </tr>
 
                     </table>

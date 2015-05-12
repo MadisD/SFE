@@ -31,7 +31,7 @@
                             <?php
                             if ($this->session->userdata('is_logged')) {
                                 echo '<li><a href="' . base_url() . '">Pealeht</a></li>';
-                                echo '<li><a href="' . base_url("main/getValues") . '">Kasutajad</a></li>';
+                                echo '<li><a href="' . base_url("main/getUsers") . '">Kasutajad</a></li>';
                                 echo '<li><a href="' . base_url("NewForm") . '">Uus Vorm    </a></li>';
                                 echo '<li><a href="' . base_url("MyForms") . '">Minu Küsitlused</a></li>';
 
@@ -54,7 +54,7 @@
             </div>
             <div class="inner cover">
 
-
+                <table class="table">
 
                 <?php
                 echo '<h4>Küsimusele on vastatud : '.$submits['count'].' korda</h4>';
@@ -62,19 +62,22 @@
 
 
                 foreach ($textQuestions as $key => $value) {
-                    echo '<h3>'.$value.'</h3>';
+                    echo '<tr></tr><th>'.$value.'</th>
+                    <th>Vastused</th>
+                    </tr>';
+
                     $count = 1;
                     foreach ($textAnswers[$key] as $value) {
-                        echo '<label for="text'.$key.'">Vastus'.$count.':</label>';
-                        echo '<p class="text'.$key.'">'.$value.'</p>';
+                        echo '<tr><td>'. $count.'</td>';
+                        echo '<td  class="text'.$key.'">'.$value.'</td></tr>';
                         $count++;
                     }
 
-                    echo '</br>';
+                    //echo '</br>';
                 }
                 ?>
 
-
+                </table>
 
             </div>
 

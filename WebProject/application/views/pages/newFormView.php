@@ -67,6 +67,7 @@
                     <h3 id="text1">Kirjeldus</h3>
                     <input type="text" name="kirjeldus"/>
                     <br/>
+                    </br>
 
                     <div id="form-body">
 
@@ -75,18 +76,18 @@
                     </div>
 
                     <br/>
-                    <input class="form-submit" type="submit" value="Loo"/>
+                    <input class="form-submit btn btn-primary" type="submit" value="Loo"/>
 
                 </form>
 
             </div>
 
             <div class="top-right" >
-                <button onclick="newTextField()">Lisa vabatekstiga küsimus</button>
+                <button class="btn btn-success" onclick="newTextField()">Lisa vabatekstiga küsimus</button>
 <!--                <button onclick="newRadioField()">Lisa ühe õige valikuga küsimus</button>-->
 
 
-                <button onclick="resetForm()">Puhasta väljad</button>
+                <button class="btn btn-danger" onclick="resetForm()">Puhasta väljad</button>
 
             </div>
         

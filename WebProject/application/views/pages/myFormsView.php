@@ -54,23 +54,39 @@
             </div>
             <div class="inner cover">
 
-                <h3>Minu Küsitlused</h3>
-                <?php
-                foreach ($forms as $key => $value) {
-                    echo '<h4>Küsitlus nr '.$key.'</h4>';
-                    echo '<p>Pealkiri: '.$value['pealkiri'].'</p>';
-                    if (strlen($value['kirjeldus']) > 0) {
-                        echo '<p>Kirjeldus: '. $value['kirjeldus'].'</p>';
-                    }
-                    echo '<p>Loodud: '.$value['date'].'</p>';
-                    echo '</br>';
-                    
-                    echo '<form method="get" action="'.base_url("MyForms/deleteForm").'/' . $value['form_id'].'"> <input type="submit" value="Kustuta Vorm"/></form>';
-                    echo '<form method="get" action="'.base_url("Form/getForm").'/' . $value['form_id'].'"> <input type="submit" value="Vaata Vormi"/></form>';
-                    echo '<form method="get" action="'.base_url("Statistics/getData").'/' . $value['form_id'].'"> <input type="submit" value="Vaata Vastuseid"/></form>';
-                }
-                ?>
 
+
+                <?php
+
+                if (count($forms) == 0) {
+                    echo '<h3 class="myFormH">Sul ei ole hetkel ühtegi küsitlust</h3>';
+                } else {
+                    echo '<h3 class="myFormH">Minu Küsitlused</h3>';
+                foreach ($forms as $key => $value) {
+
+                    echo '<table class="table">';
+                    echo '<tr><th>#</th> <th>Pealkiri</th>  <th>Kirjeldus</th> <th>Loodud</th></tr><tr>';
+
+                    echo '<td class="my-form-table-header" >'.$key.'</td>';
+                    echo '<td> '.$value['pealkiri'].'</td>';
+                    if (strlen($value['kirjeldus']) > 0) {
+                        echo '<td>'. $value['kirjeldus'].'</td>';
+                    } else {
+                        echo '<td> -  </td>';
+                    }
+                    echo '<td>'.$value['date'].'</td></tr>';
+
+
+
+                    echo '<tr><td><form method="get" action="'.base_url("MyForms/deleteForm").'/' . $value['form_id'].'"> <input class="btn btn-danger btn-sm" type="submit" value="Kustuta Vorm"/></form></td>';
+                    echo '<td><form method="get" action="'.base_url("Form/getForm").'/' . $value['form_id'].'"><input class="btn btn-info btn-sm" type="submit" value="Vaata Vormi"/></form></td>';
+                    echo '<td><form method="get" action="'.base_url("Statistics/getData").'/' . $value['form_id'].'"><input class="btn btn-primary btn-sm" type="submit" value="Vaata Vastuseid"/></form></td><td></td></tr>';
+                    echo '</table>';
+                    echo '</br>';
+                }
+                }
+
+                ?>
 
 
 

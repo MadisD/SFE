@@ -88,7 +88,7 @@
                     ?>
                     <input type="hidden" name="form_id" value="<?php echo $form_id; ?>">
 
-                    <input type="submit" value="Salvesta vastused"/>
+                    <input type="submit" class="btn btn-success" value="Salvesta vastused"/>
                 </form>
 
 
