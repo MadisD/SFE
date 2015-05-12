@@ -36,7 +36,11 @@ class Statistics extends CI_Controller{
 
             );
             $this->load->view('pages/showDataView',$data);
+        } else {
+            $this->session->set_userdata('last_page',current_url());
+            redirect(base_url('Login'));
         }
     }
+
 
 }

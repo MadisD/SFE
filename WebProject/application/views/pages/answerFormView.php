@@ -31,7 +31,7 @@
                             <?php
                             if ($this->session->userdata('is_logged')) {
                                 echo '<li><a href="' . base_url() . '">Pealeht</a></li>';
-                                echo '<li><a href="' . base_url("main/getValues") . '">Kasutajad</a></li>';
+                                echo '<li><a href="' . base_url("main/getUsers") . '">Kasutajad</a></li>';
                                 echo '<li><a href="' . base_url("NewForm") . '">Uus Vorm    </a></li>';
                                 echo '<li><a href="' . base_url("MyForms") . '">Minu Küsitlused</a></li>';
 

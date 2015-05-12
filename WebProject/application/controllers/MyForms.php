@@ -5,11 +5,12 @@ class MyForms extends CI_Controller{
 
     public function index(){
         if ($this->session->userdata('is_logged')) {
-        $forms = $this->loadForms();
-        $data = array('forms' => $forms);
-        $this->load->view('pages/myFormsView',$data);
+            $forms = $this->loadForms();
+            $data = array('forms' => $forms);
+            $this->load->view('pages/myFormsView',$data);
         } else {
-            show_404();
+            $this->session->set_userdata('last_page',current_url());
+            redirect(base_url('Login'));
         }
 
     }

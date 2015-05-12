@@ -12,6 +12,7 @@ class NewForm extends CI_Controller{
 
             $this->load->view('pages/newFormView',$data);
         } else {
+            $this->session->set_userdata('last_page',current_url());
             redirect(base_url('Login'));
         }
     }
@@ -46,7 +47,8 @@ class NewForm extends CI_Controller{
 
 
         } else {
-            show_404();
+            $this->session->set_userdata('last_page',current_url());
+            redirect(base_url('Login'));
         }
 
 

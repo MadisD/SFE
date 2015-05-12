@@ -30,7 +30,6 @@ class Register extends CI_Controller{
         );
 
         $this->form_validation->set_rules($rules);
-        //$this->form_validation->set_message('required', 'The %s field is empty.');
 
         if ($this->form_validation->run() != true) {
             $this->load->view('pages/register');
@@ -93,7 +92,7 @@ class Register extends CI_Controller{
     }
 
     public function success(){
-        $this->load->view('pages/success');
+        $this->load->view('pages/registerSuccessView');
     }
 
 

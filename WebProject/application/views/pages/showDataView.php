@@ -53,8 +53,12 @@
                 <hr>
             </div>
             <div class="inner cover">
+
+
+
                 <?php
                 echo '<h4>Küsimusele on vastatud : '.$submits['count'].' korda</h4>';
+
 
 
                 foreach ($textQuestions as $key => $value) {

@@ -31,8 +31,10 @@
                             <?php
                             if ($this->session->userdata('is_logged')) {
                                 echo '<li><a href="' . base_url() . '">Pealeht</a></li>';
-                                echo '<li><a href="' . base_url("main/getValues") . '">Kasutajad</a></li>';
-                                
+                                echo '<li><a href="' . base_url("main/getUsers") . '">Kasutajad</a></li>';
+                                echo '<li><a href="' . base_url("NewForm") . '">Uus Vorm    </a></li>';
+                                echo '<li><a href="' . base_url("MyForms") . '">Minu Küsitlused</a></li>';
+
                                 $username = $this->session->userdata('username');
                                 echo '<li><h4>'. $username .'</h4></li>';
                                 echo '<li><a href="' . base_url("logout") . '">Logout</a></li>';
@@ -40,11 +42,11 @@
                                 echo '<li><a href="' . base_url() . '">Pealeht</a></li>';
                                 echo '<li><a href="' . base_url("register") . '">Registreeru</a></li>';
                                 echo '<li><a href="' . base_url("login") . '">Logi sisse</a></li>';
-                                echo '<li><a href="' . base_url("user_authentication") . '">Google logimine</a></li>';
+                                echo '<li><a href="' . base_url("User_Authentication") . '">Google logimine</a></li>';
                             }
                             ?>
-                        
-                        
+
+
                         </ul>
                     </nav>
                 </div>

@@ -8,6 +8,11 @@ class Get_db extends CI_Model{
 
         return $query->result();
     }
+
+    public function getId(){
+            $result = $this->db->query("SELECT MAX(id) as max_id from User");
+        return $result->result_array()[0]['max_id'];
+    }
     
     public function insert1($data){
         $this->db->insert("User",$data);
