@@ -6,6 +6,7 @@ class Main extends CI_Controller {
 	public function index()
 	{
         $this->load->view('pages/mainPageView');
+        //show_404(true);
 
 	}
 
