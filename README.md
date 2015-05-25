@@ -9,3 +9,5 @@
 **26.04** [Etapp 5](https://github.com/MadisD/SFE/wiki/Etapp-5)  
   
 **10.05** [Etapp 6](https://github.com/MadisD/SFE/wiki/Etapp-6)  
+
+**24.05** [Etapp 7](https://github.com/MadisD/SFE/wiki/Etapp-7)  

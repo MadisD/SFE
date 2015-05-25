@@ -84,7 +84,6 @@
 
             <div class="top-right" >
                 <button class="btn btn-success" onclick="newTextField()">Lisa vabatekstiga küsimus</button>
-<!--                <button onclick="newRadioField()">Lisa ühe õige valikuga küsimus</button>-->
 
 
                 <button class="btn btn-danger" onclick="resetForm()">Puhasta väljad</button>
@@ -100,7 +99,6 @@
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script src="/assets/js/form.js"></script>
 <!-- Placed at the end of the document so the pages load faster -->
 </body>
